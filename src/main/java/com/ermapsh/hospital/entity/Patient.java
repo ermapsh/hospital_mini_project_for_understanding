@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 
@@ -12,9 +14,9 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(
-        name = "PatientTable", // its going to in snake case like patient_table and it will create new table,
+//        name = "PatientTable", // its going to in snake case like patient_table and it will create new table,
         uniqueConstraints = {
-                @UniqueConstraint(name = "unique_contact_number", columnNames = {"contactNumber"}),
+//                @UniqueConstraint(name = "unique_contact_number", columnNames = {"contactNumber"}),
                 @UniqueConstraint(name="unique_patient_name_dob", columnNames = {"name", "dob"}),
         },
         indexes = {
@@ -26,9 +28,10 @@ import java.time.LocalDateTime;
 public class Patient { // if we Patient change this to PatientTable, then its going to in snake case like patient_table and it will create new table
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false, length = 40)
     private String name;
 
     @ToString.Exclude
@@ -37,5 +40,13 @@ public class Patient { // if we Patient change this to PatientTable, then its go
     @Enumerated(EnumType.STRING)
     private Gender gender;
 
+    @Column(unique = true)
     private String contactNumber;
+
+    @CreationTimestamp
+    @Column(updatable = false)
+    private LocalDateTime createdAt;
+
+    @UpdateTimestamp
+    private LocalDateTime updatedAt;
 }

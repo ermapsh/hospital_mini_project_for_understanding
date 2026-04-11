@@ -1,6 +1,9 @@
 package com.ermapsh.hospital.entity;
 
+import com.ermapsh.hospital.entity.type.BloodType;
+import com.ermapsh.hospital.entity.type.Gender;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -8,6 +11,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @ToString
@@ -34,14 +38,27 @@ public class Patient { // if we Patient change this to PatientTable, then its go
     @Column(nullable = false, length = 40)
     private String name;
 
-    @ToString.Exclude
-    private LocalDateTime dob;
-
     @Enumerated(EnumType.STRING)
     private Gender gender;
 
+    @ToString.Exclude
+    private LocalDateTime dob;
+
+    @Email
+    private String email;
     @Column(unique = true)
+
     private String contactNumber;
+    @Enumerated(EnumType.STRING)
+
+    private BloodType bloodGroup;
+
+    @OneToOne
+    @JoinColumn(name="patient_insurance_id")
+    private Insurance insurance; // owning side
+
+    @OneToMany(mappedBy = "patient")
+    private List<Appointment> appointments;
 
     @CreationTimestamp
     @Column(updatable = false)

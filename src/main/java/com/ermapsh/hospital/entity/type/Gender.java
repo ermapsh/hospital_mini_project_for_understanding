@@ -1,4 +1,4 @@
-package com.ermapsh.hospital.entity;
+package com.ermapsh.hospital.entity.type;
 
 public enum Gender {
     MALE,

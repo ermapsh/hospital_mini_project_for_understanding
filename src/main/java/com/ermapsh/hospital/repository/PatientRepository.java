@@ -1,7 +1,7 @@
 package com.ermapsh.hospital.repository;
 
 import com.ermapsh.hospital.dto.GenderCountEntity;
-import com.ermapsh.hospital.entity.Gender;
+import com.ermapsh.hospital.entity.type.Gender;
 import com.ermapsh.hospital.entity.Patient;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
@@ -14,7 +14,6 @@ import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Objects;
 
 @Repository
 public interface PatientRepository extends JpaRepository<Patient, Long> {

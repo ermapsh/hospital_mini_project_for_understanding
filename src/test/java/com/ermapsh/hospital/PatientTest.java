@@ -1,7 +1,7 @@
 package com.ermapsh.hospital;
 
 import com.ermapsh.hospital.dto.GenderCountEntity;
-import com.ermapsh.hospital.entity.Gender;
+import com.ermapsh.hospital.entity.type.Gender;
 import com.ermapsh.hospital.entity.Patient;
 import com.ermapsh.hospital.repository.PatientRepository;
 import com.ermapsh.hospital.service.PatientService;
@@ -14,7 +14,6 @@ import org.springframework.data.domain.Sort;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Objects;
 
 @SpringBootTest
 public class PatientTest {

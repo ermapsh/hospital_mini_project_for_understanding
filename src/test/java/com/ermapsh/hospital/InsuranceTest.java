@@ -1,6 +1,7 @@
 package com.ermapsh.hospital;
 
 import com.ermapsh.hospital.entity.Insurance;
+import com.ermapsh.hospital.entity.Patient;
 import com.ermapsh.hospital.service.InsuranceService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,4 +32,10 @@ public class InsuranceTest {
         insuranceService.deletePatientWithInsurance(2L);
     }
 
+
+    @Test
+    public void updateTheInsurance(){
+       Patient patient =  insuranceService.updateInsuranceOfPatient(3L);
+       System.out.println(patient);
+    }
 }

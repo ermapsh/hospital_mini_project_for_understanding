@@ -29,4 +29,12 @@ public class InsuranceService {
         Patient patient = patientRepository.findById(patientId).orElseThrow();
         patientRepository.deleteById(patientId);
     }
+
+
+    @Transactional
+    public Patient updateInsuranceOfPatient(Long patientId){
+        Patient patient = patientRepository.findById(patientId).orElseThrow();
+        patient.setInsurance(null);
+        return patient;
+    }
 }

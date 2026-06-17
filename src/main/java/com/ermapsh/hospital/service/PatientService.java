@@ -22,4 +22,12 @@ public class PatientService {
 
         return p1;
     }
+
+    @Transactional
+    public void deletePatient(Long patientId){
+        Patient p1 = patientRepository.findById(patientId).orElseThrow();
+
+        patientRepository.deleteById(patientId);
+    }
+
 }

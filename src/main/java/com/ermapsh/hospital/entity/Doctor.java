@@ -7,6 +7,7 @@ import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,12 +29,12 @@ public class Doctor {
     private Gender gender;
 
     @ToString.Exclude
-    private LocalDateTime dob;
+    private LocalDate dob;
 
     @Email
     private String email;
-    @Column(unique = true)
 
+    @Column(unique = true)
     private String contactNumber;
 
     private String specialisation;

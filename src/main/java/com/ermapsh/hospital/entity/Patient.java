@@ -56,11 +56,14 @@ public class Patient { // if we Patient change this to PatientTable, then its go
     @Enumerated(EnumType.STRING)
     private BloodType bloodGroup;
 
-    @OneToOne
+    @OneToOne(
+//            cascade = {CascadeType.PERSIST, CascadeType.MERGE}
+            cascade =  CascadeType.ALL
+    ) // we need to take care of child as well along with parent, in this patient is parent and insurance is child
     @JoinColumn(name="patient_insurance_id", nullable = true)
     private Insurance insurance; // owning side
 
-    @OneToMany(mappedBy = "patient")
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL)
     private List<Appointment> appointments = new ArrayList<>(); // inverse side
 
     @CreationTimestamp

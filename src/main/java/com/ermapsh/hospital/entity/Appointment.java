@@ -1,5 +1,6 @@
 package com.ermapsh.hospital.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Appointment {
 
     @Id
@@ -26,12 +28,16 @@ public class Appointment {
 
     private Boolean status;
 
-    @ManyToOne
-    @JoinColumn(name = "patient_id", nullable = false) // owning side
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "patient_id", nullable = false)
+    @ToString.Exclude// owning side
+    @JsonIgnore
     private Patient patient;
 
     @ManyToOne
+    @ToString.Exclude
     @JoinColumn(name = "doctor_id", nullable = false)
+    @JsonIgnore
     private Doctor doctor;
 
     @CreationTimestamp

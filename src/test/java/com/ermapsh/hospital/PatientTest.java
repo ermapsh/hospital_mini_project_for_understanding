@@ -84,11 +84,15 @@ public class PatientTest {
         }
     }
 
-
-
     @Test
     public void updateNameWithId() {
         int p = patientRepository.updateNameWithId(1L, "Mahesh Mestri");
         System.out.println(p);
+    }
+
+
+    @Test
+    public void deletePatientWithAppointment(){
+        patientRepository.deleteById(2L); // its going to delete appointment too
     }
 }

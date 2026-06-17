@@ -12,6 +12,8 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
+@ToString
 public class Insurance {
 
     @Id
@@ -27,10 +29,11 @@ public class Insurance {
     @Column(nullable = false)
     private LocalDate validUntil;
 
+    @OneToOne(mappedBy = "insurance") // bidirectional mapping called inverse site (inside patient table there is insurance column present)
+    @ToString.Exclude
+    private Patient patient;
+
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt; // using table entity directly as foreign key type
-
-    @OneToOne(mappedBy = "insurance") // bidirectional mapping called inverse site (inside patient table there is insurance column present)
-    private Patient patient;
 }

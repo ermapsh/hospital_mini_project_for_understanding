@@ -27,12 +27,12 @@ public class Appointment {
     private Boolean status;
 
     @ManyToOne
-    @JoinColumn(name = "patient_id", nullable = false)
+    @JoinColumn(name = "patient_id", nullable = false) // owning side
     private Patient patient;
 
-//    @ManyToOne
-//    @JoinColumn(name = "patient_id", nullable = false)
-//    private Doctor doctor_id;
+    @ManyToOne
+    @JoinColumn(name = "doctor_id", nullable = false)
+    private Doctor doctor;
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)

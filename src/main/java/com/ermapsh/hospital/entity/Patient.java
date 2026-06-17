@@ -11,7 +11,10 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @ToString
@@ -49,16 +52,16 @@ public class Patient { // if we Patient change this to PatientTable, then its go
     @Column(unique = true)
 
     private String contactNumber;
-    @Enumerated(EnumType.STRING)
 
+    @Enumerated(EnumType.STRING)
     private BloodType bloodGroup;
 
     @OneToOne
-    @JoinColumn(name="patient_insurance_id")
+    @JoinColumn(name="patient_insurance_id", nullable = true)
     private Insurance insurance; // owning side
 
     @OneToMany(mappedBy = "patient")
-    private List<Appointment> appointments;
+    private List<Appointment> appointments = new ArrayList<>(); // inverse side
 
     @CreationTimestamp
     @Column(updatable = false)

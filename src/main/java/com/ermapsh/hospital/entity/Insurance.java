@@ -31,6 +31,6 @@ public class Insurance {
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt; // using table entity directly as foreign key type
 
-    @OneToOne(mappedBy = "insurance") // bidirectional mapping called inverse site
+    @OneToOne(mappedBy = "insurance") // bidirectional mapping called inverse site (inside patient table there is insurance column present)
     private Patient patient;
 }

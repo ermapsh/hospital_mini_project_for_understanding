@@ -3,6 +3,8 @@ package com.ermapsh.hospital.controller;
 import com.ermapsh.hospital.dto.PatchTitleDTO;
 import com.ermapsh.hospital.dto.RestDataDTO;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestClient;
@@ -16,6 +18,8 @@ import java.util.List;
 public class RestClientUsageController {
 
     private final RestClient restClient;
+
+    Logger log = LoggerFactory.getLogger(RestClientUsageController.class);
 
     @GetMapping("")
     public List<RestDataDTO> getApi(){

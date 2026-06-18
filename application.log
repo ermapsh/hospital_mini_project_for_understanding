@@ -1,0 +1,118 @@
+2026-06-18T22:07:04.359+05:30  INFO 13841 --- [hospital] [restartedMain] c.ermapsh.hospital.HospitalApplication   : Starting HospitalApplication using Java 25.0.1 with PID 13841 (/Users/ermapsh/Devlopement/project/backend/hospital/target/classes started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-06-18T22:07:04.360+05:30  INFO 13841 --- [hospital] [restartedMain] c.ermapsh.hospital.HospitalApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-06-18T22:07:04.386+05:30  INFO 13841 --- [hospital] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T22:07:04.391+05:30  INFO 13841 --- [hospital] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 6 JPA repository interfaces.
+2026-06-18T22:07:04.406+05:30  INFO 13841 --- [hospital] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-18T22:07:04.406+05:30  INFO 13841 --- [hospital] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T22:07:04.406+05:30  INFO 13841 --- [hospital] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-06-18T22:07:04.409+05:30  INFO 13841 --- [hospital] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 49 ms
+2026-06-18T22:07:04.412+05:30  INFO 13841 --- [hospital] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2026-06-18T22:07:04.418+05:30  INFO 13841 --- [hospital] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection org.postgresql.jdbc.PgConnection@22ce52bc
+2026-06-18T22:07:04.418+05:30  INFO 13841 --- [hospital] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2026-06-18T22:07:04.420+05:30  INFO 13841 --- [hospital] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18T22:07:04.424+05:30  INFO 13841 --- [hospital] [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2026-06-18T22:07:04.426+05:30  INFO 13841 --- [hospital] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18T22:07:04.432+05:30  INFO 13841 --- [hospital] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.15
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-18T22:07:04.439+05:30  INFO 13841 --- [hospital] [restartedMain] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-06-18T22:07:04.463+05:30  INFO 13841 --- [hospital] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18T22:07:04.490+05:30  INFO 13841 --- [hospital] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T22:07:04.517+05:30  WARN 13841 --- [hospital] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18T22:07:04.534+05:30  INFO 13841 --- [hospital] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-18T22:07:04.534+05:30  INFO 13841 --- [hospital] [restartedMain] c.ermapsh.hospital.HospitalApplication   : Started HospitalApplication in 0.18 seconds (process running for 7908.402)
+2026-06-18T22:07:04.534+05:30  INFO 13841 --- [hospital] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-18T22:07:16.075+05:30  INFO 16967 --- [hospital] [main] com.ermapsh.hospital.RestClientTest      : Starting RestClientTest using Java 25.0.1 with PID 16967 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-06-18T22:07:16.076+05:30  INFO 16967 --- [hospital] [main] com.ermapsh.hospital.RestClientTest      : No active profile set, falling back to 1 default profile: "default"
+2026-06-18T22:07:16.332+05:30  INFO 16967 --- [hospital] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T22:07:16.355+05:30  INFO 16967 --- [hospital] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 6 JPA repository interfaces.
+2026-06-18T22:07:16.525+05:30  INFO 16967 --- [hospital] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T22:07:16.572+05:30  INFO 16967 --- [hospital] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a0f87e5
+2026-06-18T22:07:16.573+05:30  INFO 16967 --- [hospital] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T22:07:16.613+05:30  INFO 16967 --- [hospital] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18T22:07:16.640+05:30  INFO 16967 --- [hospital] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-18T22:07:16.726+05:30  INFO 16967 --- [hospital] [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2026-06-18T22:07:16.800+05:30  INFO 16967 --- [hospital] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18T22:07:16.838+05:30  INFO 16967 --- [hospital] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.15
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-18T22:07:16.952+05:30  INFO 16967 --- [hospital] [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-06-18T22:07:17.046+05:30  INFO 13841 --- [hospital] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-06-18T22:07:17.046+05:30  INFO 13841 --- [hospital] [Thread-88] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-18T22:07:17.047+05:30  INFO 13841 --- [hospital] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-18T22:07:17.047+05:30  INFO 13841 --- [hospital] [Thread-88] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T22:07:17.047+05:30  INFO 13841 --- [hospital] [Thread-88] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2026-06-18T22:07:17.048+05:30  INFO 13841 --- [hospital] [Thread-88] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2026-06-18T22:07:17.089+05:30  INFO 13841 --- [hospital] [restartedMain] c.ermapsh.hospital.HospitalApplication   : Starting HospitalApplication using Java 25.0.1 with PID 13841 (/Users/ermapsh/Devlopement/project/backend/hospital/target/classes started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-06-18T22:07:17.090+05:30  INFO 13841 --- [hospital] [restartedMain] c.ermapsh.hospital.HospitalApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-06-18T22:07:17.115+05:30  INFO 13841 --- [hospital] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T22:07:17.119+05:30  INFO 13841 --- [hospital] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 6 JPA repository interfaces.
+2026-06-18T22:07:17.135+05:30  INFO 13841 --- [hospital] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-18T22:07:17.135+05:30  INFO 13841 --- [hospital] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T22:07:17.135+05:30  INFO 13841 --- [hospital] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-06-18T22:07:17.138+05:30  INFO 13841 --- [hospital] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 47 ms
+2026-06-18T22:07:17.142+05:30  INFO 13841 --- [hospital] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2026-06-18T22:07:17.146+05:30  INFO 13841 --- [hospital] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-24 - Added connection org.postgresql.jdbc.PgConnection@457191d
+2026-06-18T22:07:17.146+05:30  INFO 13841 --- [hospital] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2026-06-18T22:07:17.150+05:30  INFO 13841 --- [hospital] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18T22:07:17.155+05:30  INFO 13841 --- [hospital] [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2026-06-18T22:07:17.157+05:30  INFO 13841 --- [hospital] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18T22:07:17.161+05:30  INFO 13841 --- [hospital] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.15
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-18T22:07:17.171+05:30  INFO 13841 --- [hospital] [restartedMain] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-06-18T22:07:17.198+05:30  INFO 13841 --- [hospital] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18T22:07:17.219+05:30  INFO 13841 --- [hospital] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T22:07:17.245+05:30  WARN 13841 --- [hospital] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18T22:07:17.263+05:30  INFO 13841 --- [hospital] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-18T22:07:17.264+05:30  INFO 13841 --- [hospital] [restartedMain] c.ermapsh.hospital.HospitalApplication   : Started HospitalApplication in 0.182 seconds (process running for 7921.131)
+2026-06-18T22:07:17.264+05:30  INFO 13841 --- [hospital] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-06-18T22:07:17.344+05:30  INFO 16967 --- [hospital] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18T22:07:17.388+05:30  INFO 16967 --- [hospital] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T22:07:17.419+05:30  INFO 16967 --- [hospital] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-18T22:07:17.910+05:30  WARN 16967 --- [hospital] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18T22:07:18.056+05:30  INFO 16967 --- [hospital] [main] com.ermapsh.hospital.RestClientTest      : Started RestClientTest in 2.122 seconds (process running for 2.609)
+2026-06-18T22:07:18.311+05:30  INFO 16967 --- [hospital] [main] o.j.p.l.core.DiscoveryIssueNotifier      : TestEngine with ID 'junit-jupiter' encountered 2 non-critical issues during test discovery:
+
+(1) [INFO] Ineffective @Order annotation on method 'public void com.ermapsh.hospital.RestClientTest.getAll()'. It will not be applied because MethodOrderer.OrderAnnotation is not in use. Note that the annotation may be either directly present or meta-present on the method.
+    Source: MethodSource [className = 'com.ermapsh.hospital.RestClientTest', methodName = 'getAll', methodParameterTypes = '']
+            at com.ermapsh.hospital.RestClientTest.getAll(SourceFile:0)
+
+(2) [INFO] Ineffective @Order annotation on method 'public void com.ermapsh.hospital.RestClientTest.get()'. It will not be applied because MethodOrderer.OrderAnnotation is not in use. Note that the annotation may be either directly present or meta-present on the method.
+    Source: MethodSource [className = 'com.ermapsh.hospital.RestClientTest', methodName = 'get', methodParameterTypes = '']
+            at com.ermapsh.hospital.RestClientTest.get(SourceFile:0)
+2026-06-18T22:07:18.314+05:30  INFO 16967 --- [hospital] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T22:07:18.314+05:30  INFO 16967 --- [hospital] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-18T22:07:18.316+05:30  INFO 16967 --- [hospital] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-18T22:07:42.169+05:30  INFO 13841 --- [hospital] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-18T22:07:42.170+05:30  INFO 13841 --- [hospital] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-18T22:07:42.171+05:30  INFO 13841 --- [hospital] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T22:07:42.171+05:30  INFO 13841 --- [hospital] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2026-06-18T22:07:42.171+05:30  INFO 13841 --- [hospital] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.

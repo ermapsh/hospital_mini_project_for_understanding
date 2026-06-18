@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-    <property name="LOG_FILE" value="application.log" />
+    <property name="LOG_PATH" value="logs"/>
 
-    <appender name="ROLLING"
+    <appender name="DAILY_FILE"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-
-        <file>${LOG_FILE}</file>
 
         <rollingPolicy
                 class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 
             <fileNamePattern>
-                ${LOG_FILE}.%d{yyyy-MM-dd}.%i.zip
+                ${LOG_PATH}/application-%d{yyyy-MM-dd}.log
             </fileNamePattern>
-
-            <timeBasedFileNamingAndTriggeringPolicy
-                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-
-                <maxFileSize>10MB</maxFileSize>
-
-            </timeBasedFileNamingAndTriggeringPolicy>
 
             <maxHistory>30</maxHistory>
 
@@ -35,7 +26,7 @@
     </appender>
 
     <root level="INFO">
-        <appender-ref ref="ROLLING" />
+        <appender-ref ref="DAILY_FILE"/>
     </root>
 
 </configuration>

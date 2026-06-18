@@ -1,0 +1,78 @@
+2026-06-18 22:15:11.094 [main] INFO  com.ermapsh.hospital.RestClientTest - Starting RestClientTest using Java 25.0.1 with PID 17465 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-06-18 22:15:11.094 [main] INFO  com.ermapsh.hospital.RestClientTest - No active profile set, falling back to 1 default profile: "default"
+2026-06-18 22:15:11.170 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-18 22:15:11.301 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18 22:15:11.323 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 6 JPA repository interfaces.
+2026-06-18 22:15:11.456 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-18 22:15:11.497 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fb48970
+2026-06-18 22:15:11.498 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-18 22:15:11.530 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18 22:15:11.554 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-18 22:15:11.642 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-06-18 22:15:11.709 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18 22:15:11.743 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.15
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-18 22:15:11.842 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-06-18 22:15:12.060 [restartedMain] INFO  c.e.hospital.HospitalApplication - Starting HospitalApplication using Java 25.0.1 with PID 17349 (/Users/ermapsh/Devlopement/project/backend/hospital/target/classes started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-06-18 22:15:12.060 [restartedMain] INFO  c.e.hospital.HospitalApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-18 22:15:12.116 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18 22:15:12.123 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 6 JPA repository interfaces.
+2026-06-18 22:15:12.160 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-18 22:15:12.160 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-18 22:15:12.161 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-18 22:15:12.161 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-06-18 22:15:12.165 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 104 ms
+2026-06-18 22:15:12.179 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-06-18 22:15:12.184 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@3592a0a1
+2026-06-18 22:15:12.184 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-06-18 22:15:12.195 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18 22:15:12.202 [restartedMain] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-06-18 22:15:12.206 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18 22:15:12.210 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.15
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-18 22:15:12.222 [restartedMain] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-06-18 22:15:12.224 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18 22:15:12.265 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18 22:15:12.294 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18 22:15:12.302 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-18 22:15:12.319 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18 22:15:12.375 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18 22:15:12.404 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-18 22:15:12.404 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-18 22:15:12.405 [restartedMain] INFO  c.e.hospital.HospitalApplication - Started HospitalApplication in 0.356 seconds (process running for 145.405)
+2026-06-18 22:15:12.406 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-18 22:15:12.829 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18 22:15:12.952 [main] INFO  com.ermapsh.hospital.RestClientTest - Started RestClientTest in 1.996 seconds (process running for 2.443)
+2026-06-18 22:15:13.166 [main] WARN  com.ermapsh.hospital.RestClientTest - fist task but second priority
+2026-06-18 22:15:13.171 [main] INFO  o.j.p.l.core.DiscoveryIssueNotifier - TestEngine with ID 'junit-jupiter' encountered 2 non-critical issues during test discovery:
+
+(1) [INFO] Ineffective @Order annotation on method 'public void com.ermapsh.hospital.RestClientTest.getAll()'. It will not be applied because MethodOrderer.OrderAnnotation is not in use. Note that the annotation may be either directly present or meta-present on the method.
+    Source: MethodSource [className = 'com.ermapsh.hospital.RestClientTest', methodName = 'getAll', methodParameterTypes = '']
+            at com.ermapsh.hospital.RestClientTest.getAll(SourceFile:0)
+
+(2) [INFO] Ineffective @Order annotation on method 'public void com.ermapsh.hospital.RestClientTest.get()'. It will not be applied because MethodOrderer.OrderAnnotation is not in use. Note that the annotation may be either directly present or meta-present on the method.
+    Source: MethodSource [className = 'com.ermapsh.hospital.RestClientTest', methodName = 'get', methodParameterTypes = '']
+            at com.ermapsh.hospital.RestClientTest.get(SourceFile:0)
+2026-06-18 22:15:13.174 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18 22:15:13.174 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-18 22:15:13.176 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

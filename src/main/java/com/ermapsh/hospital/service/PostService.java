@@ -5,7 +5,9 @@ import com.ermapsh.hospital.entity.PostEntity;
 import com.ermapsh.hospital.repository.PostEntityRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -33,7 +35,7 @@ public class PostService {
     public PostEntity updatePostById(Long postId, PostDTO inputPost) {
 
         PostEntity postEntity = postEntityRepository.findById(postId)
-                .orElseThrow(() -> new RuntimeException("Post not found"));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Post not found"));
 
         postEntity.setTitle(inputPost.getTitle());
         postEntity.setDescription(inputPost.getDescription());

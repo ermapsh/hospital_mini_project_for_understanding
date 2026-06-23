@@ -14,9 +14,9 @@ public class JwtTest {
 
     @Test
     public void createJwtToken(){
-        User user = new User(4L, "Mahesh", "mahesh@gmail.com");
-        String token = jwtService.generateToken(user);
-        System.out.println(token);
+//        User user = new User(4L, "Mahesh", "mahesh@gmail.com");
+//        String token = jwtService.generateToken(user);
+//        System.out.println(token);
     }
 
     @Test

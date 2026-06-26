@@ -23,7 +23,6 @@ public class JwtService {
     }
 
     private Claims getClaims(String token) {
-
         return Jwts.parser()
                 .verifyWith(getSecretKey())
                 .build()

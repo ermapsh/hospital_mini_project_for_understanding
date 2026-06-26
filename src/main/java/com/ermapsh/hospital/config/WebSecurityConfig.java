@@ -1,5 +1,7 @@
 package com.ermapsh.hospital.config;
 
+import com.ermapsh.hospital.filter.JwtAuthFilter;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -15,24 +17,24 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 //import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @EnableWebSecurity
 @Configuration
+@RequiredArgsConstructor
 public class WebSecurityConfig {
 
-    @Bean
-    PasswordEncoder passwordEncoder(){
-        return new BCryptPasswordEncoder();
-    }
+    private  final JwtAuthFilter jwtAuthFilter;
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity){
         httpSecurity.
+                addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class).
                 csrf(csrfConfig->csrfConfig.disable()).
                 sessionManagement(sessionConfig -> sessionConfig.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).
                 authorizeHttpRequests(auth->auth.
                         requestMatchers("/auth/**").permitAll().
-                        requestMatchers("/post/**").hasRole("ADMIN").
+//                        requestMatchers("/post/**").hasRole("ADMIN").
                         anyRequest().authenticated());
 
 //                .formLogin(Customizer.withDefaults());

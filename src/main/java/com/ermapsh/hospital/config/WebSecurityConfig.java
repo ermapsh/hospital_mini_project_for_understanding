@@ -1,6 +1,7 @@
 package com.ermapsh.hospital.config;
 
 import com.ermapsh.hospital.filter.JwtAuthFilter;
+import com.ermapsh.hospital.handlers.OAuth2SuccessHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,15 +26,20 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class WebSecurityConfig {
 
     private  final JwtAuthFilter jwtAuthFilter;
+    private final OAuth2SuccessHandler oAuth2SuccessHandler;
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity){
         httpSecurity.
+                oauth2Login(oauth2Config->
+                        oauth2Config.failureUrl("/login?error=true")
+                                .successHandler(oAuth2SuccessHandler)
+                ).
                 addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class).
                 csrf(csrfConfig->csrfConfig.disable()).
                 sessionManagement(sessionConfig -> sessionConfig.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).
                 authorizeHttpRequests(auth->auth.
-                        requestMatchers("/auth/**").permitAll().
+                        requestMatchers("/auth/**", "/home.html").permitAll().
 //                        requestMatchers("/post/**").hasRole("ADMIN").
                         anyRequest().authenticated());
 

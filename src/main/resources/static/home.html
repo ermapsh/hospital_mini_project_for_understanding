@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Home</title>
+</head>
+<body>
+
+<h1>🎉 Login Successful</h1>
+
+<p>Welcome to Hospital Management System</p>
+
+<h3>Access Token</h3>
+
+<textarea id="token" rows="10" cols="100"></textarea>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("token");
+
+    if (token) {
+        document.getElementById("token").value = token;
+
+        // Store token for future API calls
+        localStorage.setItem("accessToken", token);
+
+        console.log("JWT Stored:", token);
+    } else {
+        document.body.innerHTML = "<h2>No token received.</h2>";
+    }
+</script>
+
+</body>
+</html>

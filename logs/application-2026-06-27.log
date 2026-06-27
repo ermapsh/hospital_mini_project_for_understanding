@@ -2176,3 +2176,49 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2026-06-27 11:36:21.873 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
 2026-06-27 11:36:21.874 [restartedMain] INFO  c.e.hospital.HospitalApplication - Started HospitalApplication in 0.355 seconds (process running for 50.838)
 2026-06-27 11:36:21.875 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-27 11:37:16.588 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-27 11:37:16.590 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-27 11:37:16.592 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 11:37:16.592 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-06-27 11:37:16.593 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-06-27 11:37:18.088 [restartedMain] INFO  c.e.hospital.HospitalApplication - Starting HospitalApplication using Java 25.0.1 with PID 36823 (/Users/ermapsh/Devlopement/project/backend/hospital/target/classes started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-06-27 11:37:18.090 [restartedMain] INFO  c.e.hospital.HospitalApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-27 11:37:18.119 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-27 11:37:18.120 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-27 11:37:18.199 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-27 11:37:18.807 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-27 11:37:18.833 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 7 JPA repository interfaces.
+2026-06-27 11:37:19.374 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-27 11:37:19.383 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-27 11:37:19.385 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-27 11:37:19.385 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-06-27 11:37:19.414 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1294 ms
+2026-06-27 11:37:19.508 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-27 11:37:19.550 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f422b81
+2026-06-27 11:37:19.551 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-27 11:37:19.591 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-27 11:37:19.617 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-06-27 11:37:19.724 [restartedMain] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-06-27 11:37:19.848 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-27 11:37:19.914 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.15
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-27 11:37:20.137 [restartedMain] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-06-27 11:37:20.887 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-27 11:37:20.939 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-27 11:37:20.984 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-27 11:37:21.172 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-06-27 11:37:21.911 [restartedMain] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-27 11:37:22.426 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-06-27 11:37:22.474 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-27 11:37:22.480 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-27 11:37:22.484 [restartedMain] INFO  c.e.hospital.HospitalApplication - Started HospitalApplication in 4.773 seconds (process running for 5.236)

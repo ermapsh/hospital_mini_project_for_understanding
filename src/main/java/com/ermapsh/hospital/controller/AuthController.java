@@ -8,10 +8,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
@@ -36,6 +33,11 @@ public class AuthController {
     private ResponseEntity<RefreshTokenResponse> refreshToken(@RequestBody @Valid RefreshTokenRequest request){
         String refreshToken = request.refreshToken();
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(authService.refreshToken(refreshToken));
+    }
+
+    @DeleteMapping("logout")
+    private ResponseEntity<?> logout(@RequestBody @Valid RefreshTokenRequest request){
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(authService.logout(request.refreshToken()));
     }
 
 }

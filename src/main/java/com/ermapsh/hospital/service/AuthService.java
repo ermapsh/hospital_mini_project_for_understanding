@@ -6,6 +6,7 @@ import com.ermapsh.hospital.dto.LoginResponse;
 import com.ermapsh.hospital.dto.RefreshTokenResponse;
 import com.ermapsh.hospital.entity.Session;
 import com.ermapsh.hospital.entity.User;
+import com.nimbusds.jwt.proc.ExpiredJWTException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -44,18 +45,20 @@ public class AuthService {
         return new LoginResponse(user.getId(), accessToken, refreshToken);
     }
 
-    public RefreshTokenResponse refreshToken(String refreshToken) {
+    public RefreshTokenResponse refreshToken(String refreshToken) throws ExpiredJWTException {
+        log.warn("before -----1");
         if (!jwtService.isRefreshToken(refreshToken)) {
             throw new RuntimeException("Invalid refresh token");
         }
 
-        sessionService.validateSession(refreshToken).orElseThrow(()->{
-            throw new RuntimeException("Expired refresh token");
-        });
+        log.warn("before -----2");
+
+        sessionService.validateSession(refreshToken);
 
         Long userId = jwtService.getUserIdFromJwtToken(refreshToken);
+        log.warn("before -----3 and log: "+ userId);
         User user = userService.getUserById(userId);
-
+        log.warn("before -----3");
         String accessToken = jwtService.generateAccessToken(user);
         return new RefreshTokenResponse(userId, accessToken, refreshToken);
     }

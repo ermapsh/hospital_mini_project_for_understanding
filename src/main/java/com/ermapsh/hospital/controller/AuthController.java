@@ -4,6 +4,7 @@ import com.ermapsh.hospital.dto.*;
 import com.ermapsh.hospital.service.AuthService;
 import com.ermapsh.hospital.service.JwtService;
 import com.ermapsh.hospital.service.UserService;
+import com.nimbusds.jwt.proc.ExpiredJWTException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -30,9 +31,9 @@ public class AuthController {
     }
 
     @PostMapping("refresh")
-    private ResponseEntity<RefreshTokenResponse> refreshToken(@RequestBody @Valid RefreshTokenRequest request){
+    private ResponseEntity<ApiResonse> refreshToken(@RequestBody @Valid RefreshTokenRequest request) throws ExpiredJWTException {
         String refreshToken = request.refreshToken();
-        return ResponseEntity.status(HttpStatus.ACCEPTED).body(authService.refreshToken(refreshToken));
+        return ResponseEntity.status(202).body(new ApiResonse("refresh token",authService.refreshToken(refreshToken)));
     }
 
     @DeleteMapping("logout")

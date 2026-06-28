@@ -1,5 +1,6 @@
 package com.ermapsh.hospital.config;
 
+import com.ermapsh.hospital.enums.Role;
 import com.ermapsh.hospital.filter.JwtAuthFilter;
 import com.ermapsh.hospital.handlers.OAuth2SuccessHandler;
 import lombok.RequiredArgsConstructor;
@@ -28,6 +29,9 @@ public class WebSecurityConfig {
     private  final JwtAuthFilter jwtAuthFilter;
     private final OAuth2SuccessHandler oAuth2SuccessHandler;
 
+    private  static final String[] publicRoutes = {
+        "/error", "/auth/**", "/home.html"
+    };
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity){
         httpSecurity.
@@ -39,8 +43,8 @@ public class WebSecurityConfig {
                 csrf(csrfConfig->csrfConfig.disable()).
                 sessionManagement(sessionConfig -> sessionConfig.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).
                 authorizeHttpRequests(auth->auth.
-                        requestMatchers("/auth/**", "/home.html").permitAll().
-//                        requestMatchers("/post/**").hasRole("ADMIN").
+                        requestMatchers(publicRoutes).permitAll().
+                        requestMatchers("/post/**").hasRole(Role.ADMIN.name()).
                         anyRequest().authenticated());
 
 //                .formLogin(Customizer.withDefaults());

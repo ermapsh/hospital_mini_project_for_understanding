@@ -57,6 +57,7 @@ public class UserService implements UserDetailsService {
                 .email(request.getEmail())
                 .password(request.getPassword())
                 .name(request.getName())
+                .roles(request.getRoles())
                 .build();
         toCreate.setPassword(passwordEncoder.encode(toCreate.getPassword()));
         User savedUser = userRepository.save(toCreate);

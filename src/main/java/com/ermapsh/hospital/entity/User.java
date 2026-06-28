@@ -31,9 +31,6 @@ public class User implements UserDetails {
 
     private String name;
 
-//    @Column(nullable = false)
-//    private String refreshToken;
-
     @ElementCollection(fetch = FetchType.EAGER)
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;

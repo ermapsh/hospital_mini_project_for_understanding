@@ -49,7 +49,7 @@ public class JwtService {
                 .subject(user.getId().toString())
                 .claim("type", "access")
                 .claim("email", user.getEmail())
-                .claim("roles", Set.of("ADMIN", "USER"))
+                .claim("roles", user.getRoles().toString())
                 .issuedAt(new Date())
                 .expiration(new Date(System.currentTimeMillis() + 60_000))
                 .signWith(getSecretKey())

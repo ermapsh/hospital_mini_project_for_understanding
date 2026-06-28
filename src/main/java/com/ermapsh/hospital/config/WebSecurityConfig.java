@@ -1,11 +1,14 @@
 package com.ermapsh.hospital.config;
 
+import com.ermapsh.hospital.enums.Permission;
 import com.ermapsh.hospital.enums.Role;
 import com.ermapsh.hospital.filter.JwtAuthFilter;
 import com.ermapsh.hospital.handlers.OAuth2SuccessHandler;
+import com.nimbusds.oauth2.sdk.http.HTTPRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
@@ -20,6 +23,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 //import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import static com.ermapsh.hospital.enums.Permission.POST_DELETE;
 
 @EnableWebSecurity
 @Configuration
@@ -42,9 +47,13 @@ public class WebSecurityConfig {
                 addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class).
                 csrf(csrfConfig->csrfConfig.disable()).
                 sessionManagement(sessionConfig -> sessionConfig.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).
-                authorizeHttpRequests(auth->auth.
+                authorizeHttpRequests(auth->
+                        auth.
                         requestMatchers(publicRoutes).permitAll().
                         requestMatchers("/post/**").hasRole(Role.ADMIN.name()).
+                        requestMatchers(HttpMethod.GET, "/post/**").hasAnyAuthority(Permission.POST_VIEW.name()).
+                        requestMatchers(HttpMethod.DELETE, "/post/**").hasRole(Role.ADMIN.name()).
+                        requestMatchers(HttpMethod.DELETE, "/post/**").hasAnyAuthority(POST_DELETE.name()).
                         anyRequest().authenticated());
 
 //                .formLogin(Customizer.withDefaults());

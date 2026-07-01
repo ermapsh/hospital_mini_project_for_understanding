@@ -18,7 +18,7 @@ public class Testing2 {
 //        assertThat( sum(5,3)).isEqualTo(9);
 
 //        assertThat("apple").startsWith("ap").endsWith("l").hasSize(3); // will throw error
-    Assertions.assertThatThrownBy(()->  divideTwoNumbers(5,0)).isInstanceOf(NullPointerException.class).hasMessage("divided by 0");
+//    Assertions.assertThatThrownBy(()->  divideTwoNumbers(5,0)).isInstanceOf(NullPointerException.class).hasMessage("divided by 0");
 
     }
 

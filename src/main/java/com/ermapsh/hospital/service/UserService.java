@@ -46,7 +46,6 @@ public class UserService implements UserDetailsService {
         return userRepository.findByEmail(email).orElse(null);
     }
 
-
     public SignupResponse signUp(SignupRequest request) {
         Optional<User> user = userRepository.findByEmail(request.getEmail());
         if (user.isPresent()) {
@@ -66,5 +65,12 @@ public class UserService implements UserDetailsService {
 
     public User save(User newUser) {
         return userRepository.save(newUser);
+    }
+
+    public SignupResponse getUserById2(Long id) {
+        User user = userRepository.findById(id).orElseThrow(() -> new UsernameNotFoundException("User with id " + id +
+                " not found"));
+        return modelMapper.map(user, SignupResponse.class);
+
     }
 }

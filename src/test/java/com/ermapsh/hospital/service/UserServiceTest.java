@@ -116,6 +116,13 @@ class UserServiceTest {
         // assert
         Assertions.assertThat(signupResponse).isNotNull();
         Assertions.assertThat(signupResponse.getEmail()).isEqualTo(mockUser.getEmail());
+        verify(userRepository).save(any(User.class));
+
+        ArgumentCaptor<User> argumentCaptor = ArgumentCaptor.forClass(User.class);
+        verify(userRepository).save(argumentCaptor.capture());
+
+        User capturedUser = argumentCaptor.getValue();
+        Assertions.assertThat(capturedUser.getEmail()).isEqualTo(mockUser.getEmail());
 
     }
 }

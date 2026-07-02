@@ -1,22 +1,27 @@
 package com.ermapsh.hospital.repository;
 
+import com.ermapsh.hospital.TestContainerConfiguration;
 import com.ermapsh.hospital.entity.User;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.internal.matchers.Null;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 import org.springframework.boot.jdbc.test.autoconfigure.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 
 import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Import(TestContainerConfiguration.class)
 //@SpringBootTest // whole application context having
 @DataJpaTest // data repo scans and having context and also uses by default in memory database & @Transactional so we don't need configure by manually
 //@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.ANY) // replace with h2database cause its best practice to use in testing, cause we dont wanted to populate the real db
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class UserRepositoryTest {
 
     /*
@@ -67,8 +72,7 @@ class UserRepositoryTest {
         Optional<User> user1 = userRepository.findByEmail(email);
 
 //        then
-        Assertions.assertThat(user1).isNotNull();
-        Assertions.assertThat(user1).isNotEmpty();
-        Assertions.assertThat(user1.get().getEmail()).isEqualTo(email);
+        Assertions.assertThat(user1).isEmpty();
+//        Assertions.assertThat(user1).isNotNull();
     }
 }

@@ -63,6 +63,7 @@ public class UserService implements UserDetailsService {
         return modelMapper.map(savedUser, SignupResponse.class);
     }
 
+//    extra method same like signup
     public User save(User newUser) {
         return userRepository.save(newUser);
     }

@@ -17,20 +17,16 @@ import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 import org.springframework.boot.jdbc.test.autoconfigure.AutoConfigureTestDatabase;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Import;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import java.lang.reflect.Type;
-import java.util.List;
+import javax.swing.text.html.Option;
 import java.util.Optional;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @Slf4j
@@ -67,7 +63,7 @@ class UserServiceTest {
     private SignupRequest signupRequestDto;
 
     @BeforeEach
-    void setUp(){
+    void setUp() {
         mockUser = User.builder().
                 id(id).
                 name("mahesh").
@@ -76,7 +72,7 @@ class UserServiceTest {
                 roles(Set.of(Role.valueOf("USER"))).
                 build();
 
-        signupRequestDto=  modelMapper.map(mockUser,SignupRequest.class);
+        signupRequestDto = modelMapper.map(mockUser, SignupRequest.class);
     }
 
     @Test
@@ -105,10 +101,11 @@ class UserServiceTest {
 
 
     @Test
-    void testCreateNewUser_whenValidUser_thenCreateNewUser(){
+        // happy test
+    void testCreateNewUser_whenValidUser_thenCreateNewUser() {
         // assign
-            when(userRepository.findByEmail(anyString())).thenReturn(Optional.empty()); // here we are saying for there is query used findByEmail if we provide mock user then its will throw user already exist
-            when(userRepository.save(any(User.class))).thenReturn(mockUser); // and on save method return that our mockuser
+        when(userRepository.findByEmail(anyString())).thenReturn(Optional.empty()); // here we are saying for there is query used findByEmail if we provide mock user then its will throw user already exist
+        when(userRepository.save(any(User.class))).thenReturn(mockUser); // and on save method return that our mockuser
 
         // act
         SignupResponse signupResponse = userService.signUp(signupRequestDto);
@@ -124,5 +121,51 @@ class UserServiceTest {
         User capturedUser = argumentCaptor.getValue();
         Assertions.assertThat(capturedUser.getEmail()).isEqualTo(mockUser.getEmail());
 
+    }
+
+    @Test
+        // sad test
+    void testGetUserById_whenUserNotPresent_thenThrowException() {
+//    arrange
+        when(userRepository.findById(anyLong())).thenReturn(Optional.empty());
+//        act & assert
+        Assertions.assertThatThrownBy(() -> userService.getUserById(1L)).
+                isInstanceOf(UsernameNotFoundException.class).
+                hasMessage("User with id 1 not found");
+        verify(userRepository).findById(1L);
+    }
+
+    @Test
+    void testCreateNewUser_WhenAttemptingCreateNewUserWithExitingEmail_thenTrowException() {
+//        arrange
+        when(userRepository.findByEmail(anyString())).thenReturn(Optional.of(mockUser));
+
+//        act and assert
+        Assertions.assertThatThrownBy(() -> userService.signUp(signupRequestDto)).
+                isInstanceOf(BadCredentialsException.class).
+                hasMessage("User email already exist " + mockUser.getEmail());
+        verify(userRepository).findByEmail(mockUser.getEmail());
+    }
+
+    @Test
+    void testFindByEmail_whenAttemptingToGetUserByEmail_thenThrowException() {
+//        arrange
+        when(userRepository.findByEmail(anyString())).thenReturn(Optional.empty());
+
+        //        act and assert
+        Assertions.assertThatThrownBy(() -> userService.loadUserByUsername(mockUser.getEmail())).
+                isInstanceOf(UsernameNotFoundException.class).
+                hasMessage("User not found with email: " + mockUser.getEmail());
+        verify(userRepository).findByEmail(mockUser.getEmail());
+    }
+
+    @Test
+    void testFindByEmail_whenAttemptingToGetUserByEmail_thenThrowNull() {
+
+        when(userRepository.findByEmail(anyString())).thenReturn(Optional.empty());
+
+        Assertions.assertThat(userService.getUsrByEmail(mockUser.getEmail()))
+                .isNull();
+        verify(userRepository).findByEmail(mockUser.getEmail());
     }
 }

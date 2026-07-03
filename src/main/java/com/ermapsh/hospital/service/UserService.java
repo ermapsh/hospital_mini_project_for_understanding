@@ -1,25 +1,16 @@
 package com.ermapsh.hospital.service;
 
-import com.ermapsh.hospital.dto.LoginDto;
 import com.ermapsh.hospital.dto.SignupRequest;
 import com.ermapsh.hospital.dto.SignupResponse;
 import com.ermapsh.hospital.entity.User;
 import com.ermapsh.hospital.repository.UserRepository;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.jspecify.annotations.NullMarked;
 import org.modelmapper.ModelMapper;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.modelmapper.ModelMapper;
 
 import java.util.Optional;
 

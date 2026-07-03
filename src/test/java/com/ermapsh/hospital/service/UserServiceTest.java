@@ -168,4 +168,13 @@ class UserServiceTest {
                 .isNull();
         verify(userRepository).findByEmail(mockUser.getEmail());
     }
+
+    @Test
+    void testSaveUser() {
+        when(userRepository.save(any(User.class))).thenReturn(mockUser);
+
+        Assertions.assertThat(userService.save(mockUser)).isNotNull();
+
+        verify(userRepository).save(mockUser);
+    }
 }

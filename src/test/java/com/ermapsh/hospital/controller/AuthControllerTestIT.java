@@ -1,10 +1,8 @@
 package com.ermapsh.hospital.controller;
 
-import com.ermapsh.hospital.TestContainerConfiguration;
 import com.ermapsh.hospital.dto.LoginDto;
 import com.ermapsh.hospital.dto.LoginResponse;
 import com.ermapsh.hospital.dto.SignupRequest;
-import com.ermapsh.hospital.dto.SignupResponse;
 import com.ermapsh.hospital.entity.User;
 import com.ermapsh.hospital.enums.Permission;
 import com.ermapsh.hospital.enums.Role;
@@ -15,21 +13,14 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Spy;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.webtestclient.autoconfigure.AutoConfigureWebTestClient;
-import org.springframework.context.annotation.Import;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.test.web.reactive.server.EntityExchangeResult;
-import org.springframework.test.web.reactive.server.WebTestClient;
 
 import java.util.Set;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-@SpringBootTest
-@AutoConfigureWebTestClient(timeout = "100000")
-@Import(TestContainerConfiguration.class)
-class AuthControllerTestIT {
+
+class AuthControllerTestIT extends AbstractIntegrationIT{
 
     @Spy
     private ModelMapper modelMapper;
@@ -37,8 +28,7 @@ class AuthControllerTestIT {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @Autowired
-    private WebTestClient webTestClient;
+
 
     @Autowired
     private UserRepository userRepository;

@@ -6,10 +6,10 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 
-public record LoginResponse (
-         Long id,
-         String accessToken,
+public record LoginResponse(
+        Long id,
+        String accessToken,
         String refreshToken
-){
+) {
 
 }

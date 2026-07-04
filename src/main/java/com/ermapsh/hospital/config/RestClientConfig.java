@@ -1,6 +1,5 @@
 package com.ermapsh.hospital.config;
 
-import jdk.jfr.ContentType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +12,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @Configuration
 @RequiredArgsConstructor
-public class RestClinetConfig {
+public class RestClientConfig {
 
     @Value("${third_party.api}")
     private String BASE_URL;

@@ -26,40 +26,16 @@ class AuthControllerTestIT extends AbstractIntegrationIT{
     private ModelMapper modelMapper;
 
     @Autowired
-    private PasswordEncoder passwordEncoder;
-
-
-
-    @Autowired
     private UserRepository userRepository;
 
     @Autowired
     private SessionRepository sessionRepository;
 
-    private User user;
-    private SignupRequest testUser;
-    private LoginDto loginUser;
+    @Autowired
+    protected PasswordEncoder passwordEncoder;
 
     @BeforeEach
     void setup() {
-        user = User.builder()
-                .name("Mahesh Mestri")
-                .email("maheshmestri12@gmail.com")
-                .password(passwordEncoder.encode("Mahesh@12345"))
-                .build();
-
-        testUser = SignupRequest.builder()
-                .name("Mahesh Mestri")
-                .email("maheshmestri12@gmail.com")
-                .password(passwordEncoder.encode("Mahesh@12345"))
-                .roles(Set.of(Role.valueOf("USER")))
-                .permissions(Set.of(Permission.valueOf("POST_VIEW"), Permission.valueOf("USER_VIEW")))
-                .build();
-
-        loginUser = LoginDto.builder().
-                email("maheshmestri12@gmail.com").
-                password("Mahesh@12345").
-                build();
         sessionRepository.deleteAll();
         userRepository.deleteAll();
     }

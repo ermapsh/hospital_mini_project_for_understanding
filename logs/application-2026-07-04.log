@@ -3985,3 +3985,161 @@ MockHttpServletResponse:
 2026-07-04 23:32:44.010 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-07-04 23:32:44.011 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-07-04 23:32:44.012 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-04 23:37:51.092 [main] INFO  c.e.h.c.AuthControllerTestIT - Starting AuthControllerTestIT using Java 25.0.1 with PID 99268 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-04 23:37:51.093 [main] INFO  c.e.h.c.AuthControllerTestIT - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 23:37:51.164 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-04 23:37:51.414 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 23:37:51.469 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2026-07-04 23:37:51.664 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2026-07-04 23:37:51.665 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-07-04 23:37:51.672 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 2.0.4
+2026-07-04 23:37:51.749 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-07-04 23:37:51.928 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2026-07-04 23:37:51.928 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2026-07-04 23:37:51.944 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 29.6.1
+  API Version: 1.55
+  Operating System: Docker Desktop
+  Total Memory: 7936 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/ermapsh/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2026-07-04 23:37:51.990 [main] INFO  tc.testcontainers/ryuk:0.14.0 - Creating container for image: testcontainers/ryuk:0.14.0
+2026-07-04 23:37:52.149 [main] INFO  tc.testcontainers/ryuk:0.14.0 - Container testcontainers/ryuk:0.14.0 is starting: ace1a9a93c3a29265849cb8ec013cf2be9af6edb5890c53ac80574e3a0058a44
+2026-07-04 23:37:52.321 [main] INFO  tc.testcontainers/ryuk:0.14.0 - Container testcontainers/ryuk:0.14.0 started in PT0.330738S
+2026-07-04 23:37:52.323 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2026-07-04 23:37:52.323 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2026-07-04 23:37:52.323 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2026-07-04 23:37:52.323 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2026-07-04 23:37:52.348 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: 86b3236094358ac65c9f27817fe0d1299a9e01e77642d136021d0fd45522aa9d
+2026-07-04 23:37:52.986 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT0.663044S
+2026-07-04 23:37:52.987 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:56796/test?loggerLevel=OFF)
+2026-07-04 23:37:53.054 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-04 23:37:53.075 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-04 23:37:53.160 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-04 23:37:53.228 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 23:37:53.240 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-04 23:37:53.305 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@296b758
+2026-07-04 23:37:53.306 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-04 23:37:53.330 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:56796/test?loggerLevel=OFF]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.14
+	Default catalog/schema: test/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-04 23:37:53.417 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-04 23:37:53.822 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 23:37:53.854 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:37:53.854 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "uk1t68827l97cwyxo9r1u6t4p7d" of relation "department" does not exist, skipping
+2026-07-04 23:37:53.855 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:37:53.855 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "ukkkp33svgs69x9xgcgl55rk5sp" of relation "department" does not exist, skipping
+2026-07-04 23:37:53.856 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:37:53.856 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "uk2o0gkfbstwhhtknwdle80icm" of relation "doctor" does not exist, skipping
+2026-07-04 23:37:53.857 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:37:53.857 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "uk7rbxwbe5osbdxdxv1nx6xp5q4" of relation "insurance" does not exist, skipping
+2026-07-04 23:37:53.859 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:37:53.859 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "unique_patient_name_dob" of relation "patient" does not exist, skipping
+2026-07-04 23:37:53.860 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:37:53.860 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "ukmrjnos83qfuhf1o7sivv5ws5q" of relation "patient" does not exist, skipping
+2026-07-04 23:37:53.861 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:37:53.861 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "ukqfqu3sawio9crosjondpnadot" of relation "patient" does not exist, skipping
+2026-07-04 23:37:53.862 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:37:53.862 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2026-07-04 23:37:53.871 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 23:37:53.901 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-04 23:37:53.980 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-04 23:37:54.452 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 23:37:54.748 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-04 23:37:54.748 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-04 23:37:54.752 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-04 23:37:54.757 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 8 ms
+2026-07-04 23:37:54.808 [main] INFO  c.e.h.c.AuthControllerTestIT - Started AuthControllerTestIT in 3.861 seconds (process running for 4.333)
+2026-07-04 23:37:55.357 [main] WARN  c.e.hospital.service.AuthService - UsernamePasswordAuthenticationToken [Principal=User(id=1, email=maheshmestri12@gmail.com, password=$2a$10$sidAvr9ohchh5GdP.MEhL.FnVf1CMnoxxgqonfIlWZBkhzEIjbkW2, name=Mahesh Mestri, roles=[], permissions=[]), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-07-04T18:07:55.356725Z]]]
+2026-07-04 23:37:55.357 [main] WARN  c.e.hospital.service.AuthService - User(id=1, email=maheshmestri12@gmail.com, password=$2a$10$sidAvr9ohchh5GdP.MEhL.FnVf1CMnoxxgqonfIlWZBkhzEIjbkW2, name=Mahesh Mestri, roles=[], permissions=[])
+2026-07-04 23:37:55.696 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 23:37:55.697 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-04 23:37:55.698 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-04 23:38:29.624 [main] INFO  c.e.h.c.AuthControllerTestIT - Starting AuthControllerTestIT using Java 25.0.1 with PID 99307 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-04 23:38:29.624 [main] INFO  c.e.h.c.AuthControllerTestIT - No active profile set, falling back to 1 default profile: "default"
+2026-07-04 23:38:29.700 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-04 23:38:29.938 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-04 23:38:29.997 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 8 JPA repository interfaces.
+2026-07-04 23:38:30.188 [main] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2026-07-04 23:38:30.189 [main] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-07-04 23:38:30.196 [main] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 2.0.4
+2026-07-04 23:38:30.271 [main] INFO  o.t.d.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-07-04 23:38:30.414 [main] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2026-07-04 23:38:30.414 [main] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2026-07-04 23:38:30.424 [main] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 29.6.1
+  API Version: 1.55
+  Operating System: Docker Desktop
+  Total Memory: 7936 MB
+  Labels: 
+    com.docker.desktop.address=unix:///Users/ermapsh/Library/Containers/com.docker.docker/Data/docker-cli.sock
+2026-07-04 23:38:30.464 [main] INFO  tc.testcontainers/ryuk:0.14.0 - Creating container for image: testcontainers/ryuk:0.14.0
+2026-07-04 23:38:30.609 [main] INFO  tc.testcontainers/ryuk:0.14.0 - Container testcontainers/ryuk:0.14.0 is starting: 0a4f8a95fbab2bb029fdb4bc81131e0f8d6599ad1e50becf9411aa6c54ee1070
+2026-07-04 23:38:30.760 [main] INFO  tc.testcontainers/ryuk:0.14.0 - Container testcontainers/ryuk:0.14.0 started in PT0.296224S
+2026-07-04 23:38:30.762 [main] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2026-07-04 23:38:30.762 [main] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+2026-07-04 23:38:30.763 [main] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2026-07-04 23:38:30.763 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+2026-07-04 23:38:30.783 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: ce6827d17aff243484481cd06425c8053e16cbbea5dda1c66d7193fb6de5dfc6
+2026-07-04 23:38:31.353 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT0.589785S
+2026-07-04 23:38:31.353 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:56815/test?loggerLevel=OFF)
+2026-07-04 23:38:31.419 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-04 23:38:31.441 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-04 23:38:31.530 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-04 23:38:31.595 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-04 23:38:31.607 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-04 23:38:31.670 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c7e7ffd
+2026-07-04 23:38:31.671 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-04 23:38:31.696 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:56815/test?loggerLevel=OFF]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.14
+	Default catalog/schema: test/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-04 23:38:31.791 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-04 23:38:32.178 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-04 23:38:32.212 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:38:32.212 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "uk1t68827l97cwyxo9r1u6t4p7d" of relation "department" does not exist, skipping
+2026-07-04 23:38:32.213 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:38:32.213 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "ukkkp33svgs69x9xgcgl55rk5sp" of relation "department" does not exist, skipping
+2026-07-04 23:38:32.214 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:38:32.214 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "uk2o0gkfbstwhhtknwdle80icm" of relation "doctor" does not exist, skipping
+2026-07-04 23:38:32.215 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:38:32.215 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "uk7rbxwbe5osbdxdxv1nx6xp5q4" of relation "insurance" does not exist, skipping
+2026-07-04 23:38:32.217 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:38:32.217 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "unique_patient_name_dob" of relation "patient" does not exist, skipping
+2026-07-04 23:38:32.218 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:38:32.218 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "ukmrjnos83qfuhf1o7sivv5ws5q" of relation "patient" does not exist, skipping
+2026-07-04 23:38:32.218 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:38:32.218 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "ukqfqu3sawio9crosjondpnadot" of relation "patient" does not exist, skipping
+2026-07-04 23:38:32.219 [main] WARN  org.hibernate.orm.jdbc.warn - HHH000247: ErrorCode: 0, SQLState: 00000
+2026-07-04 23:38:32.219 [main] WARN  org.hibernate.orm.jdbc.warn - constraint "uk6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2026-07-04 23:38:32.225 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 23:38:32.257 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-04 23:38:32.334 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-04 23:38:32.799 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-04 23:38:33.096 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-07-04 23:38:33.096 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-07-04 23:38:33.100 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-04 23:38:33.112 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 16 ms
+2026-07-04 23:38:33.164 [main] INFO  c.e.h.c.AuthControllerTestIT - Started AuthControllerTestIT in 3.688 seconds (process running for 4.235)
+2026-07-04 23:38:33.726 [main] WARN  c.e.hospital.service.AuthService - UsernamePasswordAuthenticationToken [Principal=User(id=1, email=maheshmestri12@gmail.com, password=$2a$10$e6LiTsoQ/aXJ3Dt6nebToeLtgMowmel5uqaxGhS1UK4qByVrGM3.C, name=Mahesh Mestri, roles=[], permissions=[]), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-07-04T18:08:33.726327Z]]]
+2026-07-04 23:38:33.726 [main] WARN  c.e.hospital.service.AuthService - User(id=1, email=maheshmestri12@gmail.com, password=$2a$10$e6LiTsoQ/aXJ3Dt6nebToeLtgMowmel5uqaxGhS1UK4qByVrGM3.C, name=Mahesh Mestri, roles=[], permissions=[])
+2026-07-04 23:38:34.057 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-04 23:38:34.058 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-04 23:38:34.059 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

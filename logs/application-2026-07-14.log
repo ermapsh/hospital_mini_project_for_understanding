@@ -391,3 +391,786 @@
 2026-07-14 22:59:41.237 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-07-14 22:59:41.240 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-07-14 22:59:41.244 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:39:11.449 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 68675 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:39:11.450 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:39:11.565 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:39:11.875 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:39:11.934 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:39:12.171 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:39:12.212 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2570851e
+2026-07-14 23:39:12.213 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:39:12.252 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:39:12.281 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:39:12.378 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:39:12.471 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:39:12.506 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:39:12.607 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:39:13.032 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:39:13.112 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:39:13.273 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:39:13.382 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:39:13.486 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:39:13.916 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:39:14.192 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:39:14.220 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.923 seconds (process running for 3.445)
+2026-07-14 23:39:20.106 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:39:20.113 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:39:20.116 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:40:24.009 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 68718 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:40:24.009 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:40:24.119 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:40:24.400 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:40:24.456 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:40:24.666 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:40:24.711 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d41200c
+2026-07-14 23:40:24.711 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:40:24.744 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:40:24.768 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:40:24.854 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:40:24.941 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:40:24.975 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:40:25.075 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:40:25.501 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:40:25.569 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:40:25.733 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:40:25.839 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:40:25.922 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:40:26.496 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:40:26.778 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:40:26.806 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.95 seconds (process running for 3.466)
+2026-07-14 23:40:28.384 [main] WARN  c.e.hospital.ai.service.AIService - You want to hear a joke about yourself?
+Here's one that's truly self-aware, I must say:
+"You're the star of your own show,
+A leading role with no script to call home."
+2026-07-14 23:40:30.470 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:40:30.472 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:40:30.473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:40:50.887 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 68767 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:40:50.887 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:40:50.997 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:40:51.267 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:40:51.326 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:40:51.573 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:40:51.622 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1bb0fa38
+2026-07-14 23:40:51.623 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:40:51.665 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:40:51.692 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:40:51.779 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:40:51.878 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:40:51.916 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:40:52.004 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:40:52.385 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:40:52.461 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:40:52.620 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:40:52.714 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:40:52.792 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:40:53.254 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:40:53.638 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:40:53.689 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.949 seconds (process running for 3.471)
+2026-07-14 23:40:55.258 [main] WARN  c.e.hospital.ai.service.AIService - On me, you say? Well,
+I'm just a vessel for your dismay.
+My ego's thin, my humor's thin too,
+But still I'll laugh at you.
+
+2026-07-14 23:40:57.346 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:40:57.348 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:40:57.351 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:42:11.225 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 68868 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:42:11.226 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:42:11.323 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:42:11.590 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:42:11.644 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:42:11.850 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:42:11.890 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46c2189e
+2026-07-14 23:42:11.891 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:42:11.925 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:42:11.948 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:42:12.038 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:42:12.120 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:42:12.154 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:42:12.247 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:42:12.628 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:42:12.701 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:42:12.847 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:42:12.936 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:42:13.011 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:42:13.487 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:42:13.749 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:42:13.778 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.695 seconds (process running for 3.173)
+2026-07-14 23:42:15.244 [main] WARN  c.e.hospital.ai.service.AIService - ChatClientResponse[chatResponse=ChatResponse [metadata={ id: , usage: DefaultUsage{promptTokens=56, completionTokens=40, totalTokens=96}, rateLimit: org.springframework.ai.chat.metadata.EmptyRateLimit@6c8f53d1 }, generations=[Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=Here's one:
+
+"In the land of flaws and fears,
+I'm a masterpiece that brings only tears.
+My imperfections shine like stars at night,
+A constellation of mistakes that light your life.", metadata={messageType=ASSISTANT}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='stop', filters=0, metadata=0]]]], context={}]
+
+2026-07-14 23:42:17.345 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:42:17.349 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:42:17.352 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:42:28.910 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 68889 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:42:28.910 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:42:29.004 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:42:29.309 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:42:29.365 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:42:29.587 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:42:29.622 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7676b2b9
+2026-07-14 23:42:29.623 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:42:29.660 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:42:29.684 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:42:29.767 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:42:29.840 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:42:29.871 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:42:29.954 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:42:30.329 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:42:30.408 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:42:30.548 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:42:30.636 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:42:30.716 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:42:31.075 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:42:31.364 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:42:31.392 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.619 seconds (process running for 3.057)
+2026-07-14 23:42:33.147 [main] WARN  c.e.hospital.ai.service.AIService - ChatClientResponse[chatResponse=ChatResponse [metadata={ id: , usage: DefaultUsage{promptTokens=56, completionTokens=53, totalTokens=109}, rateLimit: org.springframework.ai.chat.metadata.EmptyRateLimit@71604f60 }, generations=[Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=Here's one:
+
+"You're like a puzzle, I'm the missing piece,
+A match made in heaven, or so it would tease.
+But honestly, I'd rather be lost with you,
+Than found without, my friend, that's just not true.", metadata={messageType=ASSISTANT}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='stop', filters=0, metadata=0]]]], context={}]
+
+2026-07-14 23:42:35.247 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:42:35.250 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:42:35.254 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:42:51.093 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 68911 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:42:51.093 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:42:51.182 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:42:51.454 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:42:51.526 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:42:51.729 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:42:51.773 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7676b2b9
+2026-07-14 23:42:51.773 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:42:51.808 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:42:51.832 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:42:51.921 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:42:52.003 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:42:52.034 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:42:52.126 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:42:52.506 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:42:52.585 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:42:52.739 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:42:52.826 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:42:52.900 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:42:53.258 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:42:53.519 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:42:53.545 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.589 seconds (process running for 3.047)
+2026-07-14 23:42:55.050 [main] WARN  c.e.hospital.ai.service.AIService - ChatClientResponse[chatResponse=ChatResponse [metadata={ id: , usage: DefaultUsage{promptTokens=56, completionTokens=42, totalTokens=98}, rateLimit: org.springframework.ai.chat.metadata.EmptyRateLimit@71604f60 }, generations=[Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent="Your life's a canvas, oh so divine,
+A masterpiece of mistakes and design.
+You're the brush that strokes your own fate,
+And I'm the one who paints your life's dark state.", metadata={messageType=ASSISTANT}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='stop', filters=0, metadata=0]]]], context={}]
+
+2026-07-14 23:42:57.159 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:42:57.162 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:42:57.165 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:43:11.161 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 68940 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:43:11.162 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:43:11.246 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:43:11.508 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:43:11.563 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:43:11.766 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:43:11.802 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46c2189e
+2026-07-14 23:43:11.802 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:43:11.835 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:43:11.856 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:43:11.938 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:43:11.999 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:43:12.046 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:43:12.129 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:43:12.495 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:43:12.575 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:43:12.717 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:43:12.799 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:43:12.872 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:43:13.231 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:43:13.571 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:43:13.603 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.578 seconds (process running for 3.01)
+2026-07-14 23:43:15.263 [main] WARN  c.e.hospital.ai.service.AIService - ChatClientResponse[chatResponse=ChatResponse [metadata={ id: , usage: DefaultUsage{promptTokens=56, completionTokens=44, totalTokens=100}, rateLimit: org.springframework.ai.chat.metadata.EmptyRateLimit@29b36c2b }, generations=[Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=Here's one for you:
+
+"My eyes upon you shine so bright,
+Like stars that twinkle through the night.
+But honestly, they're just reflecting your face,
+A poor attempt to conceal my judgmental gaze.", metadata={messageType=ASSISTANT}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='stop', filters=0, metadata=0]]]], context={}]
+
+2026-07-14 23:43:17.366 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:43:17.373 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:43:17.388 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:43:46.402 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 68966 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:43:46.403 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:43:46.491 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:43:46.765 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:43:46.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:43:47.028 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:43:47.071 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a85dc58
+2026-07-14 23:43:47.072 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:43:47.106 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:43:47.129 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:43:47.218 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:43:47.293 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:43:47.326 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:43:47.418 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:43:47.821 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:43:47.890 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:43:48.042 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:43:48.128 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:43:48.210 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:43:48.628 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:43:48.942 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:43:48.968 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.704 seconds (process running for 3.182)
+2026-07-14 23:43:52.727 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:43:52.730 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:43:52.733 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:45:17.385 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 69041 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:45:17.385 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:45:17.480 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:45:17.746 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:45:17.803 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:45:18.005 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:45:18.044 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22dc9d46
+2026-07-14 23:45:18.044 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:45:18.081 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:45:18.107 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:45:18.195 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:45:18.279 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:45:18.312 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:45:18.402 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:45:18.783 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:45:18.860 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:45:19.015 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:45:19.098 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:45:19.182 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:45:19.639 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:45:19.947 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:45:19.982 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.737 seconds (process running for 3.207)
+2026-07-14 23:45:23.954 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:45:23.957 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:45:23.960 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:46:01.463 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 69077 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:46:01.464 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:46:01.566 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:46:01.828 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:46:01.900 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:46:02.112 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:46:02.156 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6dfebd2a
+2026-07-14 23:46:02.157 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:46:02.194 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:46:02.216 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:46:02.300 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:46:02.385 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:46:02.418 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:46:02.532 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:46:02.937 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:46:03.035 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:46:03.247 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:46:03.322 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:46:03.402 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:46:03.842 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:46:04.107 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:46:04.134 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.81 seconds (process running for 3.295)
+2026-07-14 23:46:04.402 [main] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - request: ChatClientRequest[prompt=Prompt{messages=[UserMessage{content='You are a sarcastic joker, you make poetic jokes in 4 lines
+you don't make about politics
+give joke on topic: On me
+', metadata={messageType=USER}, messageType=USER}], modelOptions=org.springframework.ai.ollama.api.OllamaChatOptions@d85e9146}, context={}]
+2026-07-14 23:46:06.067 [main] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - response: {
+  "metadata" : {
+    "empty" : false,
+    "id" : "",
+    "model" : "llama3.2:3b",
+    "promptMetadata" : [ ],
+    "rateLimit" : {
+      "requestsLimit" : 0,
+      "requestsRemaining" : 0,
+      "requestsReset" : "PT0S",
+      "tokensLimit" : 0,
+      "tokensRemaining" : 0,
+      "tokensReset" : "PT0S"
+    },
+    "usage" : {
+      "promptTokens" : 56,
+      "completionTokens" : 60,
+      "totalTokens" : 116
+    }
+  },
+  "result" : {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "\"Oh, lovely, I'm the center of your delight,\nA star that shines so bright, it's just not quite right.\nI'm the one who's always there, a constant in your life,\nBut let's be real, you'd forget about me if I weren't rife.\"",
+      "toolCalls" : [ ]
+    }
+  },
+  "results" : [ {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "\"Oh, lovely, I'm the center of your delight,\nA star that shines so bright, it's just not quite right.\nI'm the one who's always there, a constant in your life,\nBut let's be real, you'd forget about me if I weren't rife.\"",
+      "toolCalls" : [ ]
+    }
+  } ]
+}
+2026-07-14 23:46:08.158 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:46:08.162 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:46:08.166 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:48:33.298 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 69185 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:48:33.299 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:48:33.389 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:48:33.666 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:48:33.726 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:48:33.927 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:48:33.967 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@720c0996
+2026-07-14 23:48:33.967 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:48:34.001 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:48:34.024 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:48:34.118 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:48:34.274 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:48:34.314 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:48:34.424 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:48:34.797 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:48:34.871 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:48:35.024 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:48:35.097 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:48:35.175 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:48:35.543 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:48:35.901 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:48:35.933 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.776 seconds (process running for 3.258)
+2026-07-14 23:48:36.269 [main] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - request: ChatClientRequest[prompt=Prompt{messages=[UserMessage{content='You are a sarcastic joker, you make poetic jokes in 4 lines
+you don't make about politics
+give joke on topic: On me
+', metadata={messageType=USER}, messageType=USER}], modelOptions=org.springframework.ai.ollama.api.OllamaChatOptions@d85e9146}, context={spring.ai.chat.client.output.format=Your response should be in JSON format.
+Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.
+Do not include markdown code blocks in your response.
+Remove the ```json markdown from the output.
+Here is the JSON Schema instance your output must adhere to:
+```{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "category" : {
+      "type" : "string"
+    },
+    "isNSFW" : {
+      "type" : "boolean"
+    },
+    "laughScore" : {
+      "type" : "number",
+      "format" : "double"
+    },
+    "text" : {
+      "type" : "string"
+    }
+  },
+  "required" : [ "category", "isNSFW", "laughScore", "text" ],
+  "additionalProperties" : false
+}```
+}]
+2026-07-14 23:48:38.109 [main] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - response: {
+  "metadata" : {
+    "empty" : false,
+    "id" : "",
+    "model" : "llama3.2:3b",
+    "promptMetadata" : [ ],
+    "rateLimit" : {
+      "requestsLimit" : 0,
+      "requestsRemaining" : 0,
+      "requestsReset" : "PT0S",
+      "tokensLimit" : 0,
+      "tokensRemaining" : 0,
+      "tokensReset" : "PT0S"
+    },
+    "usage" : {
+      "promptTokens" : 263,
+      "completionTokens" : 47,
+      "totalTokens" : 310
+    }
+  },
+  "result" : {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "{\n  \"category\": \"self-deprecation\",\n  \"isNSFW\": false,\n  \"laughScore\": 8.5,\n  \"text\": \"I'm not a mirror, but I reflect on you.\"",
+      "toolCalls" : [ ]
+    }
+  },
+  "results" : [ {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "{\n  \"category\": \"self-deprecation\",\n  \"isNSFW\": false,\n  \"laughScore\": 8.5,\n  \"text\": \"I'm not a mirror, but I reflect on you.\"",
+      "toolCalls" : [ ]
+    }
+  } ]
+}
+2026-07-14 23:48:40.220 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:48:40.222 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:48:40.225 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:49:05.120 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 69219 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:49:05.121 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:49:05.211 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:49:05.483 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:49:05.540 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:49:05.744 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:49:05.797 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@729c8def
+2026-07-14 23:49:05.797 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:49:05.837 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:49:05.861 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:49:05.959 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:49:06.042 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:49:06.074 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:49:06.171 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:49:06.562 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:49:06.635 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:49:06.796 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:49:06.879 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:49:06.961 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:49:07.424 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:49:07.723 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:49:07.752 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.784 seconds (process running for 3.367)
+2026-07-14 23:49:08.039 [main] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - request: ChatClientRequest[prompt=Prompt{messages=[UserMessage{content='You are a sarcastic joker, you make poetic jokes in 4 lines
+you don't make about politics
+give joke on topic: On me
+', metadata={messageType=USER}, messageType=USER}], modelOptions=org.springframework.ai.ollama.api.OllamaChatOptions@d85e9146}, context={}]
+2026-07-14 23:49:09.876 [main] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - response: {
+  "metadata" : {
+    "empty" : false,
+    "id" : "",
+    "model" : "llama3.2:3b",
+    "promptMetadata" : [ ],
+    "rateLimit" : {
+      "requestsLimit" : 0,
+      "requestsRemaining" : 0,
+      "requestsReset" : "PT0S",
+      "tokensLimit" : 0,
+      "tokensRemaining" : 0,
+      "tokensReset" : "PT0S"
+    },
+    "usage" : {
+      "promptTokens" : 56,
+      "completionTokens" : 62,
+      "totalTokens" : 118
+    }
+  },
+  "result" : {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "Here's one:\n\nI'm a puzzle, and you're the piece that doesn't fit,\nMy brain is wired to find someone who can quit.\nYou're stuck with me, it's quite a test,\nBut I suppose we'll just have to put up with each other, and do our best.",
+      "toolCalls" : [ ]
+    }
+  },
+  "results" : [ {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "Here's one:\n\nI'm a puzzle, and you're the piece that doesn't fit,\nMy brain is wired to find someone who can quit.\nYou're stuck with me, it's quite a test,\nBut I suppose we'll just have to put up with each other, and do our best.",
+      "toolCalls" : [ ]
+    }
+  } ]
+}
+2026-07-14 23:49:11.981 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:49:11.986 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:49:11.991 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-14 23:49:40.286 [main] INFO  c.e.h.ai.service.AIServiceTest - Starting AIServiceTest using Java 25.0.1 with PID 69247 (started by ermapsh in /Users/ermapsh/Devlopement/project/backend/hospital)
+2026-07-14 23:49:40.286 [main] INFO  c.e.h.ai.service.AIServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-07-14 23:49:40.372 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-07-14 23:49:40.632 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 23:49:40.687 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 8 JPA repository interfaces.
+2026-07-14 23:49:40.883 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-14 23:49:40.919 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f5c757c
+2026-07-14 23:49:40.920 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-14 23:49:40.950 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 23:49:40.971 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-07-14 23:49:41.063 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+2026-07-14 23:49:41.132 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 23:49:41.170 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hospital]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: hospital/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 23:49:41.258 [main] INFO  o.h.e.c.i.m.AuditMetadataGenerator - Adding properties for entity: com.ermapsh.hospital.entity.PostEntity
+2026-07-14 23:49:41.636 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 23:49:41.702 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:49:41.844 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-07-14 23:49:41.927 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 23:49:42.004 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-14 23:49:42.339 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 23:49:42.638 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoints beneath base path '/actuator'
+2026-07-14 23:49:42.667 [main] INFO  c.e.h.ai.service.AIServiceTest - Started AIServiceTest in 2.516 seconds (process running for 2.976)
+2026-07-14 23:49:42.993 [main] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - request: ChatClientRequest[prompt=Prompt{messages=[UserMessage{content='You are a sarcastic joker, you make poetic jokes in 4 lines
+you don't make about politics
+give joke on topic: On me
+', metadata={messageType=USER}, messageType=USER}], modelOptions=org.springframework.ai.ollama.api.OllamaChatOptions@d85e9146}, context={spring.ai.chat.client.output.format=Your response should be in JSON format.
+Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.
+Do not include markdown code blocks in your response.
+Remove the ```json markdown from the output.
+Here is the JSON Schema instance your output must adhere to:
+```{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "category" : {
+      "type" : "string"
+    },
+    "isNSFW" : {
+      "type" : "boolean"
+    },
+    "laughScore" : {
+      "type" : "number",
+      "format" : "double"
+    },
+    "text" : {
+      "type" : "string"
+    }
+  },
+  "required" : [ "category", "isNSFW", "laughScore", "text" ],
+  "additionalProperties" : false
+}```
+}]
+2026-07-14 23:49:44.690 [main] DEBUG o.s.a.c.c.a.SimpleLoggerAdvisor - response: {
+  "metadata" : {
+    "empty" : false,
+    "id" : "",
+    "model" : "llama3.2:3b",
+    "promptMetadata" : [ ],
+    "rateLimit" : {
+      "requestsLimit" : 0,
+      "requestsRemaining" : 0,
+      "requestsReset" : "PT0S",
+      "tokensLimit" : 0,
+      "tokensRemaining" : 0,
+      "tokensReset" : "PT0S"
+    },
+    "usage" : {
+      "promptTokens" : 263,
+      "completionTokens" : 63,
+      "totalTokens" : 326
+    }
+  },
+  "result" : {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "{\n  \"category\": \"joke\",\n  \"isNSFW\": false,\n  \"laughScore\": 8.0,\n  \"text\": \"I see a map, I think it's you, my soulmate, my friend, my guiding light, leading me to nowhere in life.\"",
+      "toolCalls" : [ ]
+    }
+  },
+  "results" : [ {
+    "metadata" : {
+      "contentFilters" : [ ],
+      "empty" : true,
+      "finishReason" : "stop"
+    },
+    "output" : {
+      "media" : [ ],
+      "messageType" : "ASSISTANT",
+      "metadata" : {
+        "messageType" : "ASSISTANT"
+      },
+      "text" : "{\n  \"category\": \"joke\",\n  \"isNSFW\": false,\n  \"laughScore\": 8.0,\n  \"text\": \"I see a map, I think it's you, my soulmate, my friend, my guiding light, leading me to nowhere in life.\"",
+      "toolCalls" : [ ]
+    }
+  } ]
+}
+2026-07-14 23:49:46.800 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 23:49:46.803 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-14 23:49:46.805 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

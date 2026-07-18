@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.prompt.PromptTemplate;
-import org.springframework.ai.ollama.api.OllamaChatOptions;
+import org.springframework.ai.embedding.EmbeddingModel;
 import org.springframework.stereotype.Service;
 import java.util.Map;
 
@@ -16,6 +16,11 @@ import java.util.Map;
 public class AIService {
 
     private final ChatClient chatClient;
+    private final EmbeddingModel embeddingModel;
+
+    public float[] getEmbedding(String text){
+        return embeddingModel.embed(text);
+    }
 
     public String getJoke(String topic) {
 
@@ -34,14 +39,14 @@ public class AIService {
                 )
                 .user(renderText)
                 .call()
-                .entity(Joke.class);
-//                .chatClientResponse();
+//                .entity(Joke.class);
+                .chatClientResponse();
 
 //        log.warn(res + "\n");
-//        assert res.chatResponse() != null;
-//        return res.chatResponse().getResult().getOutput().toString();
+        assert res.chatResponse() != null;
+        return res.chatResponse().getResult().getOutput().toString();
 
-        assert res != null;
-        return res.text();
+//        assert res != null;
+//        return res.text();
     }
 }

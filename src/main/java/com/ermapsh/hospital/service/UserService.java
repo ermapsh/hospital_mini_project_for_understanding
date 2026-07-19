@@ -4,25 +4,32 @@ import com.ermapsh.hospital.dto.SignupRequest;
 import com.ermapsh.hospital.dto.SignupResponse;
 import com.ermapsh.hospital.entity.User;
 import com.ermapsh.hospital.repository.UserRepository;
+import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class UserService implements UserDetailsService {
+    private final String cacheKey= "user";
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final ModelMapper modelMapper;
 
     @Override
+    @Cacheable(cacheNames = cacheKey, key = "#email")
     public User loadUserByUsername(String email) throws UsernameNotFoundException {
         return userRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
@@ -33,10 +40,12 @@ public class UserService implements UserDetailsService {
                 " not found"));
     }
 
+    @Cacheable(cacheNames = cacheKey, key = "#email")
     public User getUsrByEmail(String email) {
         return userRepository.findByEmail(email).orElse(null);
     }
 
+    @CachePut(cacheNames = cacheKey, key = "#request.email")
     public SignupResponse signUp(SignupRequest request) {
         Optional<User> user = userRepository.findByEmail(request.getEmail());
         if (user.isPresent()) {
@@ -54,7 +63,8 @@ public class UserService implements UserDetailsService {
         return modelMapper.map(savedUser, SignupResponse.class);
     }
 
-//    extra method same like signup
+    //    extra method same like signup
+    @CachePut(cacheNames = cacheKey, key = "#result.email")
     public User save(User newUser) {
         return userRepository.save(newUser);
     }
@@ -63,6 +73,22 @@ public class UserService implements UserDetailsService {
         User user = userRepository.findById(id).orElseThrow(() -> new UsernameNotFoundException("User with id " + id +
                 " not found"));
         return modelMapper.map(user, SignupResponse.class);
+
+    }
+
+    @CachePut(cacheNames = cacheKey, key = "#result.email")
+    @Transactional
+    public User updateUser(String email) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
+
+        user.setName("ErMapsh is great 2");
+        return userRepository.save(user);
+    }
+
+
+    @CacheEvict(cacheNames = cacheKey, key = "#email")
+    public void deleteUser(String email){
 
     }
 }

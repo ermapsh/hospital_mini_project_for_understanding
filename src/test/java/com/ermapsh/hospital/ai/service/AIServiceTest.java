@@ -19,11 +19,11 @@ class AIServiceTest {
         System.out.println(aiService.getJoke("On me"));
     }
 
-    @Test
-    public void getVector() {
+//    @Test
+//    public void getVector() {
 //        var embed = aiService.getEmbedding("this is text here");
 //        for (float e : embed) {
 //            System.out.println(e);
 //        }
-    }
+//    }
 }

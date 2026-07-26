@@ -2817,3 +2817,6 @@ Caused by: java.lang.ClassNotFoundException: com.ermapsh.hospital.service.UserSe
 2026-07-19 23:07:42.653 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-07-19 23:07:42.658 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-07-19 23:07:42.663 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-19 23:33:26.834 [HikariPool-6:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=20m51s910ms).
+2026-07-19 23:35:36.343 [HikariPool-6:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=2m9s511ms).
+2026-07-19 23:53:06.210 [HikariPool-6:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=17m29s866ms).

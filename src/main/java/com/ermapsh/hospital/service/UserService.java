@@ -4,7 +4,6 @@ import com.ermapsh.hospital.dto.SignupRequest;
 import com.ermapsh.hospital.dto.SignupResponse;
 import com.ermapsh.hospital.entity.User;
 import com.ermapsh.hospital.repository.UserRepository;
-import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.cache.annotation.CacheEvict;
@@ -17,12 +16,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashSet;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
 public class UserService implements UserDetailsService {
-    private final String cacheKey= "user";
+    private final String cacheKey= "users";
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
@@ -40,9 +41,14 @@ public class UserService implements UserDetailsService {
                 " not found"));
     }
 
-    @Cacheable(cacheNames = cacheKey, key = "#email")
     public User getUsrByEmail(String email) {
         return userRepository.findByEmail(email).orElse(null);
+    }
+
+    @Cacheable(cacheNames = cacheKey, key = "#email")
+    public SignupResponse getUserByEmail(String email) {
+        User user = userRepository.findByEmail(email).orElseThrow(()->  new BadCredentialsException("User not found" + email));
+        return modelMapper.map(user, SignupResponse.class);
     }
 
     @CachePut(cacheNames = cacheKey, key = "#request.email")
@@ -59,12 +65,12 @@ public class UserService implements UserDetailsService {
                 .roles(request.getRoles())
                 .build();
         toCreate.setPassword(passwordEncoder.encode(toCreate.getPassword()));
-        User savedUser = userRepository.save(toCreate);
+        User savedUser = save(toCreate);
         return modelMapper.map(savedUser, SignupResponse.class);
     }
 
     //    extra method same like signup
-    @CachePut(cacheNames = cacheKey, key = "#result.email")
+    //    @CachePut(cacheNames = cacheKey, key = "#result.email") // commenting for testing while using
     public User save(User newUser) {
         return userRepository.save(newUser);
     }
@@ -78,17 +84,32 @@ public class UserService implements UserDetailsService {
 
     @CachePut(cacheNames = cacheKey, key = "#result.email")
     @Transactional
-    public User updateUser(String email) {
+    public SignupResponse updateUser(String email) {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
 
         user.setName("ErMapsh is great 2");
-        return userRepository.save(user);
+        user.setRoles(new HashSet<>(Set.of()));
+        user = userRepository.save(user);
+        return new SignupResponse(
+              user.getId(),
+              user.getEmail(),
+              user.getName(),
+              user.getRoles().toString()
+        );
     }
 
 
+    @Transactional
     @CacheEvict(cacheNames = cacheKey, key = "#email")
-    public void deleteUser(String email){
+    public boolean deleteUser(String email){
+        User user = userRepository.findByEmail(email)
 
+                .orElseThrow(() ->
+
+                        new UsernameNotFoundException("User not found with email: " + email));
+
+        userRepository.delete(user);
+        return true;
     }
 }

@@ -11,6 +11,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
@@ -40,5 +42,26 @@ public class AuthController {
     private ResponseEntity<?> logout(@RequestBody @Valid RefreshTokenRequest request){
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(authService.logout(request.refreshToken()));
     }
+
+    @GetMapping("user/{userId}")
+    private ResponseEntity<?> getByUserId(@PathVariable Long userId){
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(userService.getUserById(userId));
+    }
+
+    @GetMapping("user/email/{emailId}")
+    private ResponseEntity<?> getByUserEmail(@PathVariable String emailId){
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(userService.getUserByEmail(emailId));
+    }
+
+    @PutMapping("user/update/{emailId}")
+    private ResponseEntity<?> updateByUserEmail(@PathVariable String emailId){
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(userService.updateUser(emailId));
+    }
+
+    @DeleteMapping("user/delete/{emailId}")
+    private ResponseEntity<?> deleteByUserEmail(@PathVariable String emailId){
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(userService.deleteUser(emailId)? "Deleted": null);
+    }
+
 
 }

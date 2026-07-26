@@ -54,7 +54,6 @@ class UserServiceCacheTest {
     @Test
     @Order(3)
     public void getUsrByEmail2(){
-
         log.info("first time calling: {}", userService.getUsrByEmail("maheshmestri73@gmail.com").getName());
 
         log.info("second time calling - from cache: {}", userService.getUsrByEmail("maheshmestri73@gmail.com").getName());

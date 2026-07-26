@@ -3,6 +3,8 @@ package com.ermapsh.hospital.service;
 import com.ermapsh.hospital.dto.SignupRequest;
 import com.ermapsh.hospital.dto.SignupResponse;
 import com.ermapsh.hospital.entity.User;
+import com.ermapsh.hospital.enums.Permission;
+import com.ermapsh.hospital.enums.Role;
 import com.ermapsh.hospital.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -89,7 +91,7 @@ public class UserService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
 
         user.setName("ErMapsh is great 2");
-        user.setRoles(new HashSet<>(Set.of()));
+        user.setRoles(new HashSet<Role>());
         user = userRepository.save(user);
         return new SignupResponse(
               user.getId(),
